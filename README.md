@@ -9,7 +9,7 @@ tinyproxy-docker
 version: "3.8"
 services:
   tinyproxy:
-    image: https://ghcr.io/pablozaiden/tinyproxy-docker
+    image: ghcr.io/pablozaiden/tinyproxy-docker
     ports:
       - "8888:8888"
     volumes:
