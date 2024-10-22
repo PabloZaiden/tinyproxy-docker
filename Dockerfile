@@ -10,4 +10,7 @@ RUN set -xe \
 VOLUME /etc/tinyproxy
 EXPOSE 8888
 
-CMD ["tinyproxy", "-d"]
+ADD ./cmd.sh ./cmd.sh
+
+ENTRYPOINT ["/bin/sh"]
+CMD ["./cmd.sh"]

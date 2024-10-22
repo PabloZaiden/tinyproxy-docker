@@ -12,6 +12,8 @@ services:
     image: ghcr.io/pablozaiden/tinyproxy-docker
     ports:
       - "8888:8888"
+    environment:
+      - UPSTREAM_DNS=8.8.8.8
     volumes:
       - ./data:/etc/tinyproxy
     restart: unless-stopped
